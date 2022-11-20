@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17583e6d-4615-441b-b359-3a66161e679f" name="Changes" comment="Added init tcp/udp code for server/client">
+    <list default="true" id="17583e6d-4615-441b-b359-3a66161e679f" name="Changes" comment="Added chat app example in tcp and udp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tcp/chat/client/WriteThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp/chat/client/WriteThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +37,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Emilijan/IdeaProjects/ds-first-midterm-exam-examples/src/udp/restourant",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ClientSend">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tcp._init.Client" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emilijan\IdeaProjects\ds-first-midterm-exam-examples\src\udp\restourant" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SmartTable">
+    <configuration name="CentralServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="udp.restaurant.CentralServer" />
       <module name="ds-examples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tcp._init.*" />
+          <option name="PATTERN" value="udp.restaurant.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -54,12 +60,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientSend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="udp._init.ClientSend" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="udp.restaurant.straightforward.Client" />
       <module name="ds-examples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="udp._init.*" />
+          <option name="PATTERN" value="udp.restaurant.straightforward.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,11 +74,11 @@
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tcp._init.Server" />
+      <option name="MAIN_CLASS_NAME" value="udp.restaurant.straightforward.Server" />
       <module name="ds-examples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tcp._init.*" />
+          <option name="PATTERN" value="udp.restaurant.straightforward.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +86,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerReceive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="udp._init.ServerReceive" />
+    <configuration name="SmartTable" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="udp.restaurant.SmartTable" />
       <module name="ds-examples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="udp._init.*" />
+          <option name="PATTERN" value="udp.restaurant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="udp._init.threaded.client.Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="udp._init.threaded.client.Client" />
+      <module name="ds-examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="udp._init.threaded.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,10 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientSend" />
-        <item itemvalue="Application.ServerReceive" />
+        <item itemvalue="Application.SmartTable" />
+        <item itemvalue="Application.CentralServer" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.udp.restourant.straightforward.Server" />
+        <item itemvalue="Application.udp._init.threaded.client.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +130,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668852966932</updated>
-      <workItem from="1668852968369" duration="3598000" />
+      <workItem from="1668852968369" duration="3824000" />
+      <workItem from="1668941588150" duration="23867000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1668853687500</created>
@@ -126,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668855915613</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added chat app example in tcp and udp">
+      <created>1668856689186</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668856689186</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Added init tcp/udp code for server/client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added init tcp/udp code for server/client" />
+    <MESSAGE value="Added chat app example in tcp and udp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added chat app example in tcp and udp" />
   </component>
 </project>
