@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17583e6d-4615-441b-b359-3a66161e679f" name="Changes" comment="Added restaurant app example in udp">
+    <list default="true" id="17583e6d-4615-441b-b359-3a66161e679f" name="Changes" comment="Added init code example for threaded udp server/client app">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +46,13 @@
       <recent name="C:\Users\Emilijan\IdeaProjects\ds-first-midterm-exam-examples\src\udp\restourant" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.udp.streaming_service.Client">
-    <configuration name="CentralServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="udp.restaurant.CentralServer" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp._init.threaded.Client" />
       <module name="ds-examples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="udp.restaurant.*" />
+          <option name="PATTERN" value="tcp._init.threaded.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +60,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="udp.restaurant.straightforward.Client" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp._init.threaded.Server" />
       <module name="ds-examples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="udp.restaurant.straightforward.*" />
+          <option name="PATTERN" value="tcp._init.threaded.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.udp.streaming_service.Client" />
         <item itemvalue="Application.udp.streaming_service.Server" />
         <item itemvalue="Application.SmartTable" />
-        <item itemvalue="Application.CentralServer" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +132,7 @@
       <updated>1668852966932</updated>
       <workItem from="1668852968369" duration="3824000" />
       <workItem from="1668941588150" duration="25486000" />
-      <workItem from="1668987391486" duration="3423000" />
+      <workItem from="1668987391486" duration="7392000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1668853687500</created>
@@ -161,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668969735197</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added streaming service app example in udp">
+      <created>1668991122084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668991122084</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added init code example for threaded udp server/client app">
+      <created>1668991548339</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668991548339</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +198,8 @@
     <MESSAGE value="Added init tcp/udp code for server/client" />
     <MESSAGE value="Added chat app example in tcp and udp" />
     <MESSAGE value="Added restaurant app example in udp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added restaurant app example in udp" />
+    <MESSAGE value="Added streaming service app example in udp" />
+    <MESSAGE value="Added init code example for threaded udp server/client app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added init code example for threaded udp server/client app" />
   </component>
 </project>
